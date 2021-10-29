@@ -4,8 +4,9 @@
 	"colors": {
 		"editor.background": "#171717",
 		"editor.foreground": "#fff",
-		"activityBarBadge.background": "#007acc",
-		"sideBarTitle.foreground": "#b9b9b9"
+		"activityBarBadge.background": "#808",
+		"sideBarTitle.foreground": "#b9b9b9",
+		"statusBar.background": "#444",
 	},
 	"tokenColors": [
 		{
@@ -15,7 +16,7 @@
 				"invalid.illegal"
 			],
 			"settings": {
-				"foreground": "#f0f"
+				"foreground": "#fff"
 			}
 		},
 		{
@@ -27,15 +28,14 @@
 				"foreground": "#fff"
 			}
 		},
-		//fff white: default forground and thing in `#[...]`
-		//b9b9b9 grey: comments
-		//00a9ff blue: punctuation
-		//00e6b6 cyan: string
-		//009800 green: constant
-		//e0b500 yellow:
-		//ff8080 peach:
-		//ff00be magenta:
-		//b900ff purple: functions
+		//b9b9b9 grey: variables
+		//00a9ff blue: keywords
+		//00e6b6 cyan: types, strings
+		//009800 green: constants, string punctuation
+		//b28d00 yellow: punctuation
+		//ff8080 peach: functions
+		//ff00be magenta: other
+		//b900ff purple: other
 		{
 			"name": "Comment",
 			"scope": [
@@ -43,7 +43,7 @@
 				"punctuation.definition.comment"
 			],
 			"settings": {
-				"foreground": "#b9b9b9",
+				"foreground": "#777",
 				"fontStyle": "italic"
 			}
 		},
@@ -70,7 +70,7 @@
 				"meta.block variable.other"
 			],
 			"settings": {
-				"foreground": "#ff00be"
+				"foreground": "#b9b9b9"
 			}
 		},
 		{
@@ -83,7 +83,7 @@
 			],
 			"settings": {
 				"fontStyle": "italic",
-				"foreground": "#ff00be"
+				"foreground": "#fff"
 			}
 		},
 		{
@@ -117,7 +117,7 @@
 				"constant.character.escape"
 			],
 			"settings": {
-				"foreground": "#ff8080"
+				"foreground": "#009800"
 			}
 		},
 		{
@@ -137,7 +137,7 @@
 				"keyword",
 			],
 			"settings": {
-				"foreground": "#ff8080"
+				"foreground": "#b28d00"
 			}
 		},
 		{
@@ -191,7 +191,16 @@
 				"keyword.other.special-method"
 			],
 			"settings": {
-				"foreground": "#b900ff"
+				"foreground": "#ff8080"
+			}
+		},
+		{
+			"name": "Types",
+			"scope": [
+				"entity.name",
+			],
+			"settings": {
+				"foreground": "#00e6b6"
 			}
 		},
 		{
@@ -201,7 +210,7 @@
 				"string.other.link"
 			],
 			"settings": {
-				"foreground": "#f07178"
+				"foreground": "#ff8080"
 			}
 		},
 		{
@@ -212,7 +221,7 @@
 				"markup.deleted.git_gutter"
 			],
 			"settings": {
-				"foreground": "#f07178"
+				"foreground": "#ff8080"
 			}
 		},
 		{
@@ -224,16 +233,7 @@
 				"meta.group.braces.curly constant.other.object.key.js string.unquoted.label.js"
 			],
 			"settings": {
-				"foreground": "#C3E88D"
-			}
-		},
-		{
-			"name": "Types",
-			"scope": [
-				"entity.name",
-			],
-			"settings": {
-				"foreground": "#e0b500"
+				"foreground": "#00e6b6"
 			}
 		},
 		{
@@ -356,7 +356,7 @@
 				"string.regexp"
 			],
 			"settings": {
-				"foreground": "#89DDFF"
+				"foreground": "#00e6b6"
 			}
 		},
 		{
@@ -386,7 +386,7 @@
 				"source.json meta.structure.dictionary.json support.type.property-name.json"
 			],
 			"settings": {
-				"foreground": "#C792EA"
+				"foreground": "#00a9ff"
 			}
 		},
 		{
@@ -395,7 +395,7 @@
 				"source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json"
 			],
 			"settings": {
-				"foreground": "#FFCB6B"
+				"foreground": "#00e6b6"
 			}
 		},
 		{
