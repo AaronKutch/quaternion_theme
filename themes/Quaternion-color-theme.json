@@ -2,12 +2,40 @@
 	"name": "Quaternion",
 	"type": "dark",
 	"colors": {
-		"editor.background": "#263238",
-		"editor.foreground": "#eeffff",
+		"editor.background": "#171717",
+		"editor.foreground": "#fff",
 		"activityBarBadge.background": "#007acc",
-		"sideBarTitle.foreground": "#bbbbbb"
+		"sideBarTitle.foreground": "#b9b9b9"
 	},
 	"tokenColors": [
+		{
+			"name": "Invalid",
+			"scope": [
+				"invalid",
+				"invalid.illegal"
+			],
+			"settings": {
+				"foreground": "#f0f"
+			}
+		},
+		{
+			"name": "Colors",
+			"scope": [
+				"constant.other.color"
+			],
+			"settings": {
+				"foreground": "#fff"
+			}
+		},
+		//fff white: default forground and thing in `#[...]`
+		//b9b9b9 grey: comments
+		//00a9ff blue: punctuation
+		//00e6b6 cyan:
+		//009800 green:
+		//e0b500 yellow:
+		//ff8080 peach:
+		//ff00be magenta:
+		//b900ff purple:
 		{
 			"name": "Comment",
 			"scope": [
@@ -15,8 +43,8 @@
 				"punctuation.definition.comment"
 			],
 			"settings": {
-				"fontStyle": "italic",
-				"foreground": "#546E7A"
+				"foreground": "#b9b9b9",
+				"fontStyle": "italic"
 			}
 		},
 		{
@@ -26,37 +54,34 @@
 				"string constant.other.placeholder"
 			],
 			"settings": {
-				"foreground": "#EEFFFF"
+				"foreground": "#b9b9b9"
 			}
 		},
 		{
-			"name": "Colors",
-			"scope": [
-				"constant.other.color"
-			],
-			"settings": {
-				"foreground": "#ffffff"
-			}
-		},
-		{
-			"name": "Invalid",
-			"scope": [
-				"invalid",
-				"invalid.illegal"
-			],
-			"settings": {
-				"foreground": "#FF5370"
-			}
-		},
-		{
-			"name": "Keyword, Storage",
+			"name": "Keyword (actually punctuation like colons and equals)",
 			"scope": [
 				"keyword",
+			],
+			"settings": {
+				"foreground": "#fff"
+			}
+		},
+		{
+			"name": "Storage type",
+			"scope": [
 				"storage.type",
+			],
+			"settings": {
+				"foreground": "#00a9ff"
+			}
+		},
+		{
+			"name": "Storage modifier",
+			"scope": [
 				"storage.modifier"
 			],
 			"settings": {
-				"foreground": "#C792EA"
+				"foreground": "#00a9ff"
 			}
 		},
 		{
@@ -104,7 +129,7 @@
 			}
 		},
 		{
-			"name": "Block Level Variables",
+			"name": "Block Level Variables", // ?
 			"scope": [
 				"meta.block variable.other"
 			],
@@ -113,7 +138,7 @@
 			}
 		},
 		{
-			"name": "Other Variable, String Link",
+			"name": "Other Variable, String Link", // ?
 			"scope": [
 				"support.other.variable",
 				"string.other.link"
@@ -123,13 +148,21 @@
 			}
 		},
 		{
-			"name": "Number, Constant, Function Argument, Tag Attribute, Embedded",
+			"name": "Constant",
 			"scope": [
 				"constant.numeric",
 				"constant.language",
 				"support.constant",
 				"constant.character",
 				"constant.escape",
+			],
+			"settings": {
+				"foreground": "#009800"
+			}
+		},
+		{
+			"name": "Number, Function Argument, Tag Attribute, Embedded",
+			"scope": [
 				"variable.parameter",
 				"keyword.other.unit",
 				"keyword.other"
