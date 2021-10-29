@@ -66,10 +66,24 @@
 			"name": "Variables",
 			"scope": [
 				"variable",
-				"string constant.other.placeholder"
+				"string constant.other.placeholder",
+				"meta.block variable.other"
 			],
 			"settings": {
-				"foreground": "#b9b9b9"
+				"foreground": "#ff00be"
+			}
+		},
+		{
+			"name": "`self`",
+			"scope": [
+				"variable.language",
+				"entity.name.method.js",
+				"meta.class-method.js entity.name.function.js",
+				"variable.function.constructor"
+			],
+			"settings": {
+				"fontStyle": "italic",
+				"foreground": "#ff00be"
 			}
 		},
 		{
@@ -95,6 +109,26 @@
 			],
 			"settings": {
 				"foreground": "#009800"
+			}
+		},
+		{
+			"name": "Escape Characters",
+			"scope": [
+				"constant.character.escape"
+			],
+			"settings": {
+				"foreground": "#ff8080"
+			}
+		},
+		{
+			"name": "URL",
+			"scope": [
+				"*url*",
+				"*link*",
+				"*uri*"
+			],
+			"settings": {
+				"fontStyle": "underline"
 			}
 		},
 		{
@@ -137,33 +171,27 @@
 			}
 		},
 		{
-			"name": "Function",
+			"name": "Secondary Keywords",
 			"scope": [
-				"entity.name.function",
+				"keyword.other",
+				"variable.parameter",
+				"keyword.other.unit"
 			],
 			"settings": {
-				"foreground": "#b900ff"
+				"foreground": "#00a9ff"
 			}
 		},
 		{
-			"name": "Function, Special Method",
+			"name": "Functions",
 			"scope": [
+				"entity.name.function", // this is the only one that seems to have effects in Rust
 				"meta.function-call",
 				"variable.function",
 				"support.function",
 				"keyword.other.special-method"
 			],
 			"settings": {
-				"foreground": "#82AAFF"
-			}
-		},
-		{
-			"name": "Block Level Variables", // ?
-			"scope": [
-				"meta.block variable.other"
-			],
-			"settings": {
-				"foreground": "#f07178"
+				"foreground": "#b900ff"
 			}
 		},
 		{
@@ -188,7 +216,7 @@
 			}
 		},
 		{
-			"name": "Symbols, Inherited Class, Markup Heading",
+			"name": "Symbols, Inherited Class, Markup Heading", //?
 			"scope": [
 				"entity.other.inherited-class",
 				"markup.heading",
@@ -200,20 +228,17 @@
 			}
 		},
 		{
-			"name": "Number, Function Argument, Tag Attribute, Embedded",
+			"name": "Types",
 			"scope": [
-				"variable.parameter",
-				"keyword.other.unit",
-				"keyword.other"
+				"entity.name",
 			],
 			"settings": {
-				"foreground": "#F78C6C"
+				"foreground": "#e0b500"
 			}
 		},
 		{
-			"name": "Class, Support",
+			"name": "Class, Support", // ?
 			"scope": [
-				"entity.name",
 				"support.type",
 				"support.class",
 				"support.other.namespace.use.php",
@@ -227,7 +252,7 @@
 			}
 		},
 		{
-			"name": "Entity Types",
+			"name": "Entity Types", //?
 			"scope": [
 				"support.type"
 			],
@@ -261,37 +286,7 @@
 			}
 		},
 		{
-			"name": "Language methods",
-			"scope": [
-				"variable.language"
-			],
-			"settings": {
-				"fontStyle": "italic",
-				"foreground": "#FF5370"
-			}
-		},
-		{
-			"name": "entity.name.method.js",
-			"scope": [
-				"entity.name.method.js"
-			],
-			"settings": {
-				"fontStyle": "italic",
-				"foreground": "#82AAFF"
-			}
-		},
-		{
-			"name": "meta.method.js",
-			"scope": [
-				"meta.class-method.js entity.name.function.js",
-				"variable.function.constructor"
-			],
-			"settings": {
-				"foreground": "#82AAFF"
-			}
-		},
-		{
-			"name": "Attributes",
+			"name": "Attributes", //?
 			"scope": [
 				"entity.other.attribute-name"
 			],
@@ -362,26 +357,6 @@
 			],
 			"settings": {
 				"foreground": "#89DDFF"
-			}
-		},
-		{
-			"name": "Escape Characters",
-			"scope": [
-				"constant.character.escape"
-			],
-			"settings": {
-				"foreground": "#89DDFF"
-			}
-		},
-		{
-			"name": "URL",
-			"scope": [
-				"*url*",
-				"*link*",
-				"*uri*"
-			],
-			"settings": {
-				"fontStyle": "underline"
 			}
 		},
 		{
