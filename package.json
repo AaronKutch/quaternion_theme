@@ -1,8 +1,9 @@
 {
-    "name": "aaronkutch",
+    "publisher": "aaronkutch",
+    "name": "quaternion",
     "displayName": "Quaternion",
-    "description": "Dark color theme with special color choices",
-    "version": "0.0.1",
+    "description": "Dark color theme with CIELAB color choices",
+    "version": "0.1.1",
     "engines": {
         "vscode": "^1.61.0"
     },
