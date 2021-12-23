@@ -2,16 +2,20 @@
 
 Designed with the Rust programming language in mind, but should work with many other languages.
 
-Note: in order for this theme to work properly, I highly recommend that you use the Bracket Pair
-Colorizer 2 extension (coenraads.bracket-pair-colorizer-2) and copy the following into your VScode
-settings.json (open Settings and find "Open Settings (JSON)" in the upper right):
+Note: in order for this theme to work properly, I highly recommend that you copy the following into
+your VScode settings.json (open Settings and find "Open Settings (JSON)" in the upper right):
 ```text
-    "bracket-pair-colorizer-2.colors": [
-        "#c49d00",
-        "#ff8080",
-        "#ff2adc",
-        "#a35bff",
-    ],
+    "editor.bracketPairColorization.enabled": true,
+    "editor.guides.bracketPairs": true,
+    "workbench.colorCustomizations": {
+        "editorBracketHighlight.foreground1": "#c49d00",
+        "editorBracketHighlight.foreground2": "#ff8080",
+        "editorBracketHighlight.foreground3": "#ff2adc",
+        "editorBracketHighlight.foreground4": "#a35bff",
+        "editorBracketHighlight.foreground5": "#00b2ff",
+        "editorBracketHighlight.foreground6": "#00cb9d",
+        "editorBracketHighlight.unexpectedBracket.foreground": "#f00",
+    },
 ```
 
 Other things I recommend are the Error Lens extension (usernamehw.errorlens), the Input font face
@@ -25,10 +29,11 @@ and these other settings for settings.json:
         }
     },
 
-    // If the font turns to some nonmonospace font it has not been installed correctly
+    // If the font turns into some nonmonospace font it has not been installed correctly
     "editor.fontFamily": "Input Regular",
     "debug.console.fontFamily": "Input Regular",
-    // may need to adjust this so the aliasing falls on the right boundaries
+    // you may need to adjust this for your display so
+    // that the aliasing falls on the right boundaries
     "editor.fontSize": 14,
 
     "debug.console.wordWrap": true,
