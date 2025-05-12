@@ -3,10 +3,12 @@
 Designed with the Rust programming language in mind, but should work with many other languages.
 
 Note: in order for this theme to work properly, I highly recommend that you copy the following into
-your VScode settings.json (open Settings and find "Open Settings (JSON)" in the upper right):
+your VScode settings.json (open Settings and find the small icon in the upper right with the
+description "Open Settings (JSON)"):
 ```text
     "editor.bracketPairColorization.enabled": true,
     "editor.guides.bracketPairs": true,
+    "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
     "workbench.colorCustomizations": {
         "editorBracketHighlight.foreground1": "#c49d00",
         "editorBracketHighlight.foreground2": "#ff8080",
@@ -50,6 +52,13 @@ and these other settings for settings.json:
     // note: you might not want this if you do not have a source controlled environment
     "files.autoSave": "onFocusChange",
     "files.eol": "\n",
+
+    // Sometimes it is faster to do without
+    //"editor.autoClosingComments": "never",
+    //"editor.autoClosingQuotes": "never",
+
+    // Important for rust-analyzer to not conflict with your manual builds
+    "rust-analyzer.cargo.targetDir": true,
 ```
 
 Important colors used:
