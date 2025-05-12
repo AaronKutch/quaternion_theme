@@ -166,11 +166,11 @@
 			}
 		},
 		{
-			"name": "Secondary Keywords",
+			"name": "Tag",
 			"scope": [
-				"keyword.other",
-				"variable.parameter",
-				"keyword.other.unit"
+				"entity.name.tag",
+				"meta.tag.sgml",
+				"markup.deleted.git_gutter"
 			],
 			"settings": {
 				"foreground": "#00b2ff"
