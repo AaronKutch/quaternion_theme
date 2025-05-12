@@ -63,6 +63,7 @@ and these other settings for settings.json:
 
 Important colors used:
 ```text
+#a0a0a0 (stop things from interpreting as issue numbers)
 #RRGGBB CIELAB(L, A, B) color: use
 #171717 (7.74, 0, 0) eigengrau: background
 #777777 (50, 0, 0) gray: comments
