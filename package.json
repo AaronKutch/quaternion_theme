@@ -3,9 +3,9 @@
     "name": "quaternion",
     "displayName": "Quaternion",
     "description": "Dark color theme with CIELAB color choices",
-    "version": "0.1.2",
+    "version": "0.1.3",
     "engines": {
-        "vscode": "^1.63.0"
+        "vscode": "^1.100.0"
     },
     "categories": [
         "Themes"
