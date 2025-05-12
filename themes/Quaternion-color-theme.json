@@ -13,25 +13,6 @@
 	},
 	"tokenColors": [
 		{
-			"name": "Invalid",
-			"scope": [
-				"invalid",
-				"invalid.illegal"
-			],
-			"settings": {
-				"foreground": "#a0a0a0"
-			}
-		},
-		{
-			"name": "Colors",
-			"scope": [
-				"constant.other.color"
-			],
-			"settings": {
-				"foreground": "#a0a0a0"
-			}
-		},
-		{
 			"name": "Comment",
 			"scope": [
 				"comment",
