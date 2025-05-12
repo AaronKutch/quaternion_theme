@@ -19,31 +19,15 @@
 				"punctuation.definition.comment"
 			],
 			"settings": {
-				"foreground": "#777",
-				"fontStyle": "italic"
-			}
-		},
-		{
-			"name": "Constant",
-			"scope": [
-				"constant.numeric",
-				"constant.language",
-				"constant.character",
-				"constant.escape",
-				"constant.other.symbol",
-				"constant.other.key",
-				"support.constant",
-			],
-			"settings": {
-				"foreground": "#2ab90f"
+				"fontStyle": "italic",
+				"foreground": "#777"
 			}
 		},
 		{
 			"name": "Variables",
 			"scope": [
 				"variable",
-				"string constant.other.placeholder",
-				"meta.block variable.other"
+				"string constant.other.placeholder"
 			],
 			"settings": {
 				"foreground": "#a0a0a0"
