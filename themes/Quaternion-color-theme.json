@@ -177,7 +177,7 @@
 			}
 		},
 		{
-			"name": "Functions",
+			"name": "Function, Special Method",
 			"scope": [
 				"entity.name.function", // this is the only one that seems to have effects in Rust
 				"meta.function-call",
@@ -190,9 +190,9 @@
 			}
 		},
 		{
-			"name": "Types",
+			"name": "Block Level Variables",
 			"scope": [
-				"entity.name",
+				"meta.block variable.other"
 			],
 			"settings": {
 				"foreground": "#00cb9d"
