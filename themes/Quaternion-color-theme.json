@@ -127,7 +127,7 @@
 			}
 		},
 		{
-			"name": "Punctuation Keywords",
+			"name": "Keyword, Storage",
 			"scope": [
 				"keyword",
 			],
