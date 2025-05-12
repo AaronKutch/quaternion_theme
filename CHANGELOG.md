@@ -6,4 +6,4 @@
 
 ## [0.1.3] - 2025-05-12
 ### Changes
-- No changes to the color scheme, just a maintenance update to make sure things are up-to-date
+- Just a maintenance update to make sure things are up-to-date, changed a few things that don't affect Rust

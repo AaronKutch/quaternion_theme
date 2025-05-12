@@ -53,7 +53,7 @@
 			}
 		},
 		{
-			"name": "Keyword, Storage",
+			"name": "Keyword, Storage", // deals with non-string punctuation at least on Rust
 			"scope": [
 				"keyword",
 			],
@@ -80,23 +80,31 @@
 			}
 		},
 		{
-			"name": "Operator, Misc",
+			"name": "Operator, Misc (not including string punctuation stuff)",
 			"scope": [
 				"keyword.control",
 				"constant.other.color",
-				"punctuation",
 				"meta.tag",
+				"keyword.other.template",
+				"keyword.other.substitution"
+			],
+			"settings": {
+				"foreground": "#00b2ff"
+			}
+		},
+		{
+			"name": "Operator, Misc (only including string punctuation",
+			"scope": [
+				"punctuation",
 				"punctuation.definition.tag",
 				"punctuation.separator.inheritance.php",
 				"punctuation.definition.tag.html",
 				"punctuation.definition.tag.begin.html",
 				"punctuation.definition.tag.end.html",
 				"punctuation.section.embedded",
-				"keyword.other.template",
-				"keyword.other.substitution"
 			],
 			"settings": {
-				"foreground": "#00b2ff"
+				"foreground": "#2ab90f"
 			}
 		},
 		{
@@ -107,13 +115,13 @@
 				"markup.deleted.git_gutter"
 			],
 			"settings": {
-				"foreground": "#00b2ff"
+				"foreground": "#ff8080"
 			}
 		},
 		{
 			"name": "Function, Special Method",
 			"scope": [
-				"entity.name.function", // this is the only one that seems to have effects in Rust
+				"entity.name.function",
 				"meta.function-call",
 				"variable.function",
 				"support.function",
@@ -143,19 +151,27 @@
 			}
 		},
 		{
-			"name": "Number, Constant, Function Argument, Tag Attribute, Embedded", // ?
+			"name": "Number, Constant, Function Argument, Tag Attribute, Embedded (not including secondary keywords)",
 			"scope": [
 				"constant.numeric",
 				"constant.language",
 				"support.constant",
 				"constant.character",
-				"constant.escape",
+				"constant.escape"
+			],
+			"settings": {
+				"foreground": "#2ab90f"
+			}
+		},
+		{
+			"name": "Number, Constant, Function Argument, Tag Attribute, Embedded (only including secondary keywords)",
+			"scope": [
 				"variable.parameter",
 				"keyword.other.unit",
 				"keyword.other"
 			],
 			"settings": {
-				"foreground": "#2ab90f"
+				"foreground": "#00b2ff"
 			}
 		},
 		{
@@ -174,7 +190,7 @@
 			}
 		},
 		{
-			"name": "Class, Support", // ?
+			"name": "Class, Support", // (Rust types)
 			"scope": [
 				"entity.name",
 				"support.type",
@@ -186,7 +202,7 @@
 				"support.type.sys-types"
 			],
 			"settings": {
-				"foreground": "#FFCB6B"
+				"foreground": "#00cb9d"
 			}
 		},
 		{
@@ -224,13 +240,13 @@
 			}
 		},
 		{
-			"name": "Language methods",
+			"name": "Language methods", // (Rust `self`)
 			"scope": [
 				"variable.language"
 			],
 			"settings": {
 				"fontStyle": "italic",
-				"foreground": "#ff8080"
+				"foreground": "#fff"
 			}
 		},
 		{
@@ -240,7 +256,7 @@
 			],
 			"settings": {
 				"fontStyle": "italic",
-				"foreground": "#82AAFF"
+				"foreground": "#ff8080"
 			}
 		},
 		{
@@ -250,7 +266,7 @@
 				"variable.function.constructor"
 			],
 			"settings": {
-				"foreground": "#82AAFF"
+				"foreground": "#ff8080"
 			}
 		},
 		{
