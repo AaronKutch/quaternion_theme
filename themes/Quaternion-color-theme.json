@@ -34,58 +34,19 @@
 			}
 		},
 		{
-			"name": "`self`",
+			"name": "Colors",
 			"scope": [
-				"variable.language",
-				"entity.name.method.js",
-				"meta.class-method.js entity.name.function.js",
-				"variable.function.constructor"
+				"constant.other.color"
 			],
 			"settings": {
-				"fontStyle": "italic",
-				"foreground": "#fff"
+				"foreground": "#a0a0a0"
 			}
 		},
 		{
-			"name": "Strings",
+			"name": "Invalid",
 			"scope": [
-				"string",
-				"constant.other.color",
-			],
-			"settings": {
-				"foreground": "#00cb9d"
-			}
-		},
-		{
-			"name": "String punctuation stuff",
-			"scope": [
-				"punctuation",
-				"punctuation.definition.tag",
-				"punctuation.separator.inheritance.php",
-				"punctuation.definition.tag.html",
-				"punctuation.definition.tag.begin.html",
-				"punctuation.definition.tag.end.html",
-				"punctuation.section.embedded",
-			],
-			"settings": {
-				"foreground": "#2ab90f"
-			}
-		},
-		{
-			"name": "Escape Characters",
-			"scope": [
-				"constant.character.escape"
-			],
-			"settings": {
-				"foreground": "#2ab90f"
-			}
-		},
-		{
-			"name": "URL",
-			"scope": [
-				"*url*",
-				"*link*",
-				"*uri*"
+				"invalid",
+				"invalid.illegal"
 			],
 			"settings": {
 				"fontStyle": "underline"
@@ -263,7 +224,37 @@
 			}
 		},
 		{
-			"name": "Attributes", //?
+			"name": "Language methods",
+			"scope": [
+				"variable.language"
+			],
+			"settings": {
+				"fontStyle": "italic",
+				"foreground": "#ff8080"
+			}
+		},
+		{
+			"name": "entity.name.method.js",
+			"scope": [
+				"entity.name.method.js"
+			],
+			"settings": {
+				"fontStyle": "italic",
+				"foreground": "#82AAFF"
+			}
+		},
+		{
+			"name": "meta.method.js",
+			"scope": [
+				"meta.class-method.js entity.name.function.js",
+				"variable.function.constructor"
+			],
+			"settings": {
+				"foreground": "#82AAFF"
+			}
+		},
+		{
+			"name": "Attributes",
 			"scope": [
 				"entity.other.attribute-name"
 			],
@@ -342,7 +333,7 @@
 				"constant.character.escape"
 			],
 			"settings": {
-				"foreground": "#89DDFF"
+				"foreground": "#2ab90f"
 			}
 		},
 		{
